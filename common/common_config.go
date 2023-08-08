@@ -81,3 +81,8 @@ type SqliteConfig struct {
 	// Eg: insert into db1.tb1 value(v1, v2, v3)
 	InsertSql string `json:"insertSql" validate:"required"`
 }
+
+type TextConfig struct {
+	Path string `json:"path" validate:"required"`
+	Name string `json:"name"`
+}
